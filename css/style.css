@@ -1,0 +1,15 @@
+/* ESTILO GERAL - ONG Esperança Viva
+   Arquivo Central - Importa todos os Módulos e Componentes */
+
+/* Módulos Essenciais */
+@import url("modules/variables.css");
+@import url("modules/reset.css");
+@import url("modules/layout.css");
+@import url("modules/grid.css");
+
+/* Componentes */
+@import url("components/header.css");
+@import url("components/buttons.css");
+@import url("components/cards.css");
+@import url("components/form.css");
+@import url("components/feedback.css");

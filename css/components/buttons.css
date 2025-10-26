@@ -1,0 +1,58 @@
+/* css/components/_buttons.css */
+
+/* Botões padrão (botão, input submit e links com classe .botao) */
+button,
+input[type="submit"],
+a.botao {
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: 4px;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* para links */
+  display: inline-block; /* garante que a.botao funcione */
+}
+
+/* Efeito hover */
+button:hover,
+input[type="submit"]:hover,
+a.botao:hover {
+  background: var(--cor-secundaria);
+  transform: translateY(-2px);
+}
+
+/* Estado de foco — acessibilidade */
+button:focus,
+input[type="submit"]:focus,
+a.botao:focus {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+/* Estado desabilitado */
+button:disabled,
+input[type="submit"]:disabled {
+  background: var(--cor-cinza);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Variações de botões (opcional) */
+.botao-secundario {
+  background: var(--cor-secundaria);
+}
+
+.botao-secundario:hover {
+  background: var(--cor-destaque);
+}
+
+.botao-alerta {
+  background: var(--cor-alerta);
+}
+
+.botao-alerta:hover {
+  background: color-mix(in srgb, var(--cor-alerta) 80%, black);
+}

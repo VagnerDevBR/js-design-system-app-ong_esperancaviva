@@ -1,0 +1,40 @@
+/* css/components/_feedback.css */
+
+/* Componentes de Feedback (Alerts) */
+.alert {
+  padding: var(--esp-2);
+  margin-bottom: var(--esp-3);
+  border-radius: var(--esp-1);
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.alert-sucesso {
+  background-color: color-mix(in srgb, var(--cor-sucesso) 20%, white);
+  color: var(--cor-secundaria);
+  border-color: var(--cor-sucesso);
+}
+
+.alert-alerta {
+  background-color: color-mix(in srgb, var(--cor-alerta) 20%, white);
+  color: var(--cor-alerta);
+  border-color: var(--cor-alerta);
+}
+
+/* Sistema de Tags/Badges */
+.badge {
+  display: inline-block;
+  padding: var(--esp-1) var(--esp-2);
+  font-size: var(--fs-xxs);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: var(--esp-1);
+}
+
+.badge-primaria {
+  background-color: var(--cor-primaria);
+  color: white;
+}

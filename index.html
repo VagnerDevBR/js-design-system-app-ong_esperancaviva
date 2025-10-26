@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ONG Esperança Viva — aplicação dinâmica de cadastro (SPA).">
+  <title>ONG Esperança Viva | Interativa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">
+  <span></span><span></span><span></span>
+  </div>
+  
+  <header>
+    <h1>ONG Esperança Viva</h1>
+    <nav>
+      <ul>
+                <li><a href="#/">Início</a></li> 
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+        <div id="content"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+  </footer>
+    
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

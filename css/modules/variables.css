@@ -1,0 +1,30 @@
+/* css/modules/_variables.css */
+
+:root {
+  --cor-primaria: #2da1b1;
+  --cor-secundaria: #40aca3;
+  --cor-destaque: #65a5aa;
+  --cor-clara: #f5f5f5;
+  --cor-escura: #212121;
+  --cor-cinza: #9e9e9e;
+  --cor-azul-suave: #e3f2fd;
+  --cor-alerta: #ff5943;
+  --cor-sucesso: #66bb6a;
+
+  --fonte-base: 'Arial', sans-serif;
+  --fonte-titulo: 'Poppins', sans-serif;
+
+  --fs-xxs: 12px;
+  --fs-xs: 14px;
+  --fs-sm: 16px;
+  --fs-md: 20px;
+  --fs-lg: 28px;
+  --fs-xl: 36px;
+
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}

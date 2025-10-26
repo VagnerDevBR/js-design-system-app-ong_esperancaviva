@@ -1,0 +1,56 @@
+/* css/components/_header.css */
+
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: var(--esp-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-family: var(--fonte-titulo);
+  font-size: var(--fs-lg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--esp-2);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--cor-azul-suave);
+}
+
+/* Menu hamburguer (mobile) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+  nav ul { display: none; flex-direction: column; width: 100%; background: var(--cor-secundaria); padding: var(--esp-2); }
+  nav ul.show { display: flex; }
+  nav li { margin: var(--esp-1) 0; }
+  header h1 { font-size: var(--fs-md); }
+}

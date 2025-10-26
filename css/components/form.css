@@ -1,0 +1,112 @@
+/* css/components/_form.css */
+
+/* Formulário principal */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Fieldset e containers */
+fieldset {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+legend {
+  font-weight: 600;
+  color: #00796b;
+  padding: 0 8px;
+}
+
+/* Inputs e selects */
+input, textarea, select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #00796b;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Grid para colunas */
+.container-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.col-6 {
+  flex: 1 1 calc(50% - 16px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Campo menor (UF) */
+input#estado {
+  max-width: 80px;
+}
+
+/* Botão */
+input[type="submit"] {
+  align-self: center;
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #00796b;
+  transform: scale(1.02);
+}
+
+/* Feedback visual */
+input:invalid {
+  border-color: #e57373;
+}
+
+input:valid {
+  border-color: #81c784;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .col-6 {
+    flex: 1 1 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
